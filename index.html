@@ -15,10 +15,18 @@
     var canvas = document.getElementById('meu_canvas');
     //obtendo contexto grafico
     var context = canvas.getContext('2d');
+    //preenchimento laranja
+    context.fillStyle = 'orange';
     //desenhar um retangulo preenchido
-    context.fillRect(50, 50, 100, 100)
+    context.fillRect(50, 50, 100, 100);
+    //Contorno azul com expessura de 3px
+    context.strokeStyle = 'blue';
+    //cria expessura de 3px
+    context.lineWidth = 3;
     //desenha um retangulo (apenas o contorno)
-    context.strokeRect(50, 170, 100, 100)
+    context.strokeRect(50, 170, 100, 100);
+
+
   </script>
 </body>
 
