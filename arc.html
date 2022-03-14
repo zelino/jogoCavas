@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arcs</title>
+</head>
+
+<body>
+  <canvas id="meu_canvas" width="300" height="300"></canvas>
+  <script>
+    var canvas = document.getElementById('meu_canvas');
+    var context = canvas.getContext('2d');
+
+    //Cores e espessura da linha
+    context.fillStyle = 'orange';
+    context.strokeStyle = 'black';
+    context.lineWidth = 2;
+
+    //Primeiro Arco:
+    //Novo Path
+    context.beginPath();
+    //Desenha
+    context.arc(50, 50, 40, 90 * Math.PI / 180, 270 * Math.PI / 180, fase);
+    //Preenchimento
+    context.fill();
+    //Contorno
+    context.stroke();
+  </script>
+</body>
+
+</html>
